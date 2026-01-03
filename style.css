@@ -1,0 +1,230 @@
+:root {
+    --light-green: #C5E4E7;
+    --dark-green: #00474A;
+    --medium-green: #27C3AE;
+    --text-color: #37B4A5;
+    --gray: #9FA7A4;
+    --mono-font-framily: monospace;
+    --title-font-size: 17px;
+    --title-font-weight: 600;
+}
+.root {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+    font-family: "Space Mono", monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-green);
+    color: var(--gray);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.card-detail {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: white;
+    display: flex;
+    border-radius:0.93rem;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.left-section {
+    padding: 0.7rem 0rem;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.2rem;
+	width: 50%
+}
+
+.lable-title {
+    color: var(--gray);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+}
+
+.input-group span {
+    background-color: white;
+}
+
+.tip-button-group {
+    margin: 0.625rem;
+
+}
+.tip-button-group .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tip-button-group .tip-button {
+    padding-top: 0.31rem;
+    padding-bottom: 0.31rem;
+    background-color: var(--dark-green);
+    border-radius: 0.31rem;
+    text-align: center;
+    font-weight: 600;
+    width: 30%;
+    color: white;
+    border: none;
+}
+
+.tip-button input {
+    background-color: white;
+}
+
+.right-section {
+    background-color: var(--dark-green);
+    border-radius:0.93rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+	width: 50%;
+}
+
+.row-sec {
+    margin-top: 40px;
+    margin-left: 0.625rem;
+}
+
+.number-money {
+    text-align: right;
+    color: var(--medium-green);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.right-section button{
+    width: 80%;
+    background: var(--medium-green);
+    border-color: var(--medium-green);
+    margin-top: 4rem;
+    border-radius: 0.5rem;
+    margin-left: 1.75rem;
+    color: var(--dark-green);
+    font-weight: 600;
+    padding-top: 0.31rem;
+    padding-bottom: 0.31rem;
+}
+
+.error-class {
+    color: red;
+    font-size: 12px;
+}
+
+.sub-people-title {
+    display: flex;
+    align-items: center;
+}
+
+input[type="number"]:focus {
+  border: none;
+  box-shadow: none !important;
+  outline: none; 
+}
+
+.input-error-border {
+
+}
+
+.btn-click {
+    background-color: var(--medium-green);
+    color: var(--dark-green);
+}
+
+.click-element {
+    outline: none;
+    border: none;
+    background-color: var(--light-green);
+    border-radius: 0.31rem;
+    width: 30%;
+    padding: 0.4rem 1.1rem;
+    color: #00494d !important;
+    text-align: center;
+    font-weight: var(--title-font-weight);
+    font-size: 0.81rem;
+}
+
+.active-input{    
+    background-color: #26c0ab !important;
+    color: #00494d !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::placeholder {
+  color: --var(--dark-green);
+  opacity: 1; /* Firefox */
+}
+
+.input-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: 2px solid var(--light-green);
+    border-radius: 0.31rem;
+}
+
+.input-content img {
+    width: 0.625rem;
+    height:0.93rem;
+    align-self: center;
+    margin-left: 0.625rem;
+}
+
+.input-content label {
+    width: 100%;
+    margin-left: 0.625rem;
+}
+
+.input-content input {
+    border: none;
+    font-weight: var(--title-font-weight);
+    color: var(--dark-green);
+    text-align: right;
+}
+
+.right-title {
+    color: white;
+    font-size:0.93rem;
+    font-weight: var(--title-font-weight);
+}
+
+.right-unit {
+    font-size: 0.81rem;
+    font-weight: var(--title-font-weight);
+}
+
+@media (max-width: 480px){ 
+    .left-section, .right-section, .card-detail {
+        width: 100%;
+    }
+
+    .card-detail {
+        flex-direction: column;
+    }
+}

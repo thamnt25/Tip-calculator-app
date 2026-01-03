@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+  <main>
+    <div class="card-container">
+      <div class="card-detail">
+              <section class="left-section" >
+                <div class="sub-section">
+                  <span class="lable-title">Bill</span>
+                  <div class="input-content">
+                    <img src="./images/icon-dollar.svg" alt="dolar">
+                    <label><input type="number" class="form-control" placeholder="0" id="input-bill" min="1" maxlength="5" required></label>
+                    <!-- oninput="getBillPerson()"-->
+                  </div>
+                </div>
+                <div class="sub-section">
+                    <span class="lable-title">Select tip %</span>
+                    <div class="tip-button-group">
+                      <div class="row">
+                        <button class="tip-button" value="5">
+                          5%
+                        </button>
+                        <button class="tip-button" value="10">
+                          10%
+                        </button>
+                        <button class="tip-button" value="15">
+                          15%
+                        </button>
+                      </div>
+                    </div>
+                    <div class="tip-button-group">
+                      <div class="row">
+                        <button class="tip-button" value="25">
+                          25%
+                        </button>
+                        <button class="tip-button" value="50">
+                          50%
+                        </button>
+                        <input type="number" placeholder="Custom tip" class="click-element btn input" id="custom-discount" min = "0" maxlength="3">
+                      </div>
+                    </div>
+                </div>
+                <div class="sub-section">
+                    <span class="lable-title">Number of people</span>
+                  <div class="input-content">
+                    <img src="./images/icon-person.svg" alt="person">
+                    <label><input type="number" class="form-control" placeholder="0" id="input-person" min="1" maxlength="5" required></label>
+                    <!-- oninput="getBillPerson()" -->
+                  </div>
+                </div>
+              </section>
+              <section class="right-section" >
+                <div class="row row-sec">
+                  <div class="col-3">
+                    <div class="right-title">Tip Amount</div>
+                    <div class="right-unit">/person</div>
+                  </div>
+                  <div class="col-9">
+                    <div class="number-money" id="tip-amount">$0.00</div>
+                  </div>
+                </div>
+                <div class="row row-sec">
+                  <div class="col-3">
+                    <div class="right-title">Total</div>
+                    <div class="right-unit">/person</div>
+                  </div>
+                  <div class="col-9">
+                    <div class="number-money" id="total">$0.00</div>
+                  </div>
+                </div>
+                <button id="btn-reset" onclick="resetData()">RESET</button>
+              </section>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./javascripts.js"></script>
+</body>
+</html>
